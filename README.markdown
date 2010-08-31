@@ -25,7 +25,7 @@ To install captured:
     $ sudo gem install captured
     $ captured --install
 
-When you install an example config file to ~/.captured.yml, which has a few examples of possible configuration types.
+When you install an example config file to `~/.captured.yml`, which has a few examples of possible configuration types.
 
 Using Captured
 ==============
