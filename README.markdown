@@ -20,12 +20,13 @@ With that said, once things are installed and configured it really is handy.
 Install
 =======
 
-To install captured:
+To install this customized captured build:
 
-    $ sudo gem install captured
-    $ captured --install
+    $ gem build captured.gemspec
+    $ gem install captured.gem
+    $ rm captured.gem
 
-When you install an example config file to `~/.captured.yml`, which has a few examples of possible configuration types.
+When you install, an example config file will be copied to `~/.captured.yml`, which has a few examples of possible configuration types.
 
 Using Captured
 ==============
