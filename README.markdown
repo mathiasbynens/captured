@@ -22,9 +22,11 @@ Install
 
 To install this customized captured build:
 
-    $ gem build captured.gemspec
-    $ gem install captured.gem
-    $ rm captured.gem
+```bash
+$ gem build captured.gemspec
+$ gem install captured-0.4.1.gem
+$ rm captured-0.4.1.gem
+```
 
 When you install, an example config file will be copied to `~/.captured.yml`, which has a few examples of possible configuration types.
 
@@ -48,25 +50,27 @@ By default captured uses Imgur as the default host, but you can configure it to 
 
 To edit the configuraiton:
 
-    $ open -e ~/.captured.yml
+```bash
+$ open -e ~/.captured.yml
+```
 
 Type: Imgur
 -----------
 The simple image sharer. The default option.
 
-<pre>
+```
 upload:
   type: imgur
-</pre>
+```
 
 Type: Imageshack
 ----------------
 This service is a little slower, but is free and easy.
 
-<pre>
+```
 upload:
   type: imageshack
-</pre>
+```
 
 
 Type: scp
@@ -80,7 +84,7 @@ If you have you own web server scp is a very handy way to host your own captures
  * url - the public url to the remote host+path
  * path - the remote path to upload to
 
-<pre>
+```
 upload:
   type: scp
   user: user
@@ -88,7 +92,7 @@ upload:
   host: example.com
   path: path/to/captured/
   url: "http://example.com/captured/"
-</pre>
+```
 
 Icons
 =====
